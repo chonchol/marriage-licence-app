@@ -17,6 +17,12 @@ Route::get('/', function () {
 Route::post('save', 'ApplicantController@store')->name('saveApplicant');
 Route::get('/pdf/{id}', 'ApplicantController@pdf')->name('downloadPdf');
 
+Route::get('/print/{id}', 'ApplicantController@print')->name('printData');
+
+Route::get('/pdf', function (){
+    return view('partials.pdf');
+});
+
 Auth::routes();
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');

@@ -17,7 +17,14 @@ class ApplicantController extends Controller
 
     public function store(Request $request)
     {
-        $general_info = DB::table('general_infos')->insert([
+
+        $validatedData = $request->validate([
+            'intented_place' => 'required',
+            'intented_city' => 'required',
+            'intented_mar_date' => 'required',
+        ]);
+
+        $general_info = DB::table('general_infos')->insertGetId([
                 'intented_place' => $request->input('intented_place'),
                 'intented_city' => $request->input('intented_city'),
                 'intented_mar_date' => $request->input('intented_mar_date'),
@@ -92,6 +99,10 @@ class ApplicantController extends Controller
             ]
         );
 
+        $id = $general_info;
+        //dd($id);
+        return redirect()->route('printData', [$id]);
+
     }
 
     public function pdf($id)
@@ -100,5 +111,22 @@ class ApplicantController extends Controller
         //dd($id);
         $pdf = PDF::loadView('partials.pdf', ['data' => $data])->setPaper('a4', 'portrait');
         return $pdf->stream('form3.pdf');
+    }
+
+    public function print($id)
+    {
+//        $data_id = Generalinfo::find($id);
+//        $gen_id = $data_id->id;
+//        //dd($gen_id);
+
+        $data = DB::table('general_infos')
+            ->join('applicants', 'general_infos.id', '=', 'applicants.id')
+            ->join('joint_applicants', 'general_infos.id', '=', 'joint_applicants.id')
+            ->where('general_infos.id', '=', $id)
+            ->select('*')
+            ->get();
+        //dd($data);
+
+        return view('partials.print', compact('data'));
     }
 }

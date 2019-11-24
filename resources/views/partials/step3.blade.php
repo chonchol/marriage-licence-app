@@ -1,19 +1,28 @@
 <div class="container">
-    <div class="row custom-padding">
-        <div class="col-md-4">
+    <div id="form-step-2" class="row custom-padding" role="form" data-toggle="validator">
+
+        <div class="col-md-12">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="jnamelastfirst" value="1" name="nlastfirst">
+                <label class="form-check-label" for="jnamelastfirst">Please check this box if Last Name and First and Middle Name do not apply to the applicant because they have either a registered Birth Certificate or Change of Name Certificate bearing a Single Name
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-4 japp-lm">
             <div class="form-group">
                 <label for="japp-lname">Applicant's Last Name</label>
                 <input type="text" class="form-control" id="japp-lname" name="japplicant_lname">
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 japp-lm">
             <div class="form-group">
                 <label for="japp-fmname">Applicant's First & Middle Name</label>
                 <input type="text" class="form-control" id="japp-fmname" name="japplicant_fname">
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 japp-sn">
             <div class="form-group">
                 <label for="japp-sname">Applicant's Single Name</label>
                 <input type="text" class="form-control" id="japp-sname" name="japplicant_sname">
@@ -29,7 +38,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 checkbox-pad">
+        <div class="col-md-8 checkbox-pad">
+            <label>Marital Status <span class="asterisk">*</span></label><br>
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="jnever-mar" name="japp_marital_stat" value="1" class="custom-control-input">
                 <label class="custom-control-label" for="jnever-mar">Never Married</label>
@@ -47,6 +57,28 @@
                 <label class="custom-control-label" for="jcanada_outside">Divorced Outside Canada</label>
             </div>
         </div>
+
+        <div class="col-md-4 jcourt-file">
+            <div class="form-group">
+                <label for="japp-div-inc">Court File No <span class="asterisk">*</span></label>
+                <input type="text" class="form-control" id="japp-div-inc" name="jcourt_file_no">
+            </div>
+        </div>
+
+        <div class="col-md-4 jcourt-file">
+            <div class="form-group">
+                <label for="japp-div-city">City Divorce Granted In <span class="asterisk">*</span></label>
+                <input type="text" class="form-control" id="japp-div-city" name="jdivorced_city">
+            </div>
+        </div>
+
+        <div class="col-md-4 jdivorced-country">
+            <div class="form-group">
+                <label for="japp-div-country">Foreign Divorced Country <span class="asterisk">*</span></label>
+                <input type="text" class="form-control" id="japp-div-country" name="jdivorced_country">
+            </div>
+        </div>
+
 
         <div class="col-md-4">
             <div class="form-group">
@@ -239,13 +271,77 @@
                 <input type="number" class="form-control" id="japp-phone" name="japp_prsnt_phone">
             </div>
         </div>
-        {{--        <div class="col-md-4">--}}
-        {{--            <div class="form-group form-check">--}}
-        {{--                <input type="checkbox" class="form-check-input" id="intended">--}}
-        {{--                <label class="form-check-label" for="intended">*Confirm the intended place of marriage is in Ontario--}}
-        {{--                </label>--}}
-        {{--            </div>--}}
-        {{--        </div>--}}
+
+        <div class="col-md-12">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="jpermanentcheck" value="1" name="jnlastfirst">
+                <label class="form-check-label" for="jpermanentcheck">Permanent Home Address Is Different
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-12 jpermanent_val">
+            <hr>
+            <h4>Applicant's Permanent Home Address </h4>
+            <br>
+        </div>
+
+        <div class="col-md-3 jpermanent_val">
+            <div class="form-group">
+                <label for="japp-street-p">Street<span class="asterisk">*</span> </label>
+                <input type="text" class="form-control" id="japp-street-p" name="japp_prmnt_street">
+            </div>
+        </div>
+
+        <div class="col-md-3 jpermanent_val">
+            <div class="form-group">
+                <label for="japp-apt-p">APT <span class="asterisk">*</span></label>
+                <input type="text" class="form-control" id="japp-apt-p" name="japp_prmnt_apt">
+            </div>
+        </div>
+
+        <div class="col-md-3 jpermanent_val">
+            <div class="form-group">
+                <label for="japp-city-p">City <span class="asterisk">*</span></label>
+                <input type="text" class="form-control" id="japp-city-p" name="japp_prmnt_city">
+            </div>
+        </div>
+
+        <div class="col-md-3 jpermanent_val">
+            <div class="form-group">
+                <label for="japp_country-p">Country <span class="asterisk">*</span></label>
+                <div class="">
+                    <select id="japp_country-p" class="form-control" name="japp_prmnt_country">
+                        @include('partials.country')
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 jpermanent_val">
+            <div class="form-group">
+                <label for="japp_province-p">Province <span class="asterisk">*</span></label>
+                <div class="">
+                    <select id="japp_province-p" class="form-control" name="japp_prmnt_province">
+                        @include('partials.province')
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 jpermanent_val">
+            <div class="form-group">
+                <label for="japp-postal-p">Postal Code <span class="asterisk">*</span></label>
+                <input type="number" class="form-control" id="japp-postal-p" name="japp_prmnt_pcode">
+            </div>
+        </div>
+
+        <div class="col-md-3 jpermanent_val">
+            <div class="form-group">
+                <label for="japp-phone-p">Phone <span class="asterisk">*</span></label>
+                <input type="number" class="form-control" id="japp-phone-p" name="japp_prmnt_phone">
+            </div>
+        </div>
+
     </div>
 </div>
 

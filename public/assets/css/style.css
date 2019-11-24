@@ -35,3 +35,11 @@ h4{
 .sw-theme-arrows > ul.step-anchor > li > a:before{
     margin-left: 0;
 }
+
+.with-errors{
+    color: red;
+    font-size: 14px;
+}
+.asterisk{
+    color: red;
+}
