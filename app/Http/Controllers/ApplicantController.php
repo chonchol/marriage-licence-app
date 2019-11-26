@@ -7,6 +7,7 @@ use App\Generalinfo;
 use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Crypt;
 
 class ApplicantController extends Controller
 {
@@ -99,30 +100,24 @@ class ApplicantController extends Controller
             ]
         );
 
-        $id = $general_info;
+        $id = Crypt::encryptString($general_info);
         //dd($id);
         return redirect()->route('printData', [$id]);
 
     }
 
-    public function pdf($id)
-    {
-        $data = Generalinfo::find($id);
-        //dd($id);
-        $pdf = PDF::loadView('partials.pdf', ['data' => $data])->setPaper('a4', 'portrait');
-        return $pdf->stream('form3.pdf');
-    }
 
     public function print($id)
     {
 //        $data_id = Generalinfo::find($id);
 //        $gen_id = $data_id->id;
 //        //dd($gen_id);
+        $decryptedid = Crypt::decryptString($id);
 
         $data = DB::table('general_infos')
             ->join('applicants', 'general_infos.id', '=', 'applicants.id')
             ->join('joint_applicants', 'general_infos.id', '=', 'joint_applicants.id')
-            ->where('general_infos.id', '=', $id)
+            ->where('general_infos.id', '=', $decryptedid)
             ->select('*')
             ->get();
         //dd($data);

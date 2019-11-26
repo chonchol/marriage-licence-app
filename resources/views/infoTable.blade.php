@@ -27,12 +27,12 @@
                     <tbody>
                     @foreach($data as $dat)
                     <tr>
-                        <td>{{ $dat->applicant_lname }}</td>
+                        <td>{{ $dat->applicant_lname }} {{ $dat->applicant_sname }}</td>
                         <td>{{ $dat->app_birth_country }}</td>
                         <td>{{ $dat->app_prsnt_city }}</td>
                         <td>{{ $dat->applicant_dob }}</td>
                         <td>{{ $dat->applicant_age }}</td>
-                        <td><a class="btn btn-primary btn-xs" href="{{route('downloadPdf', $dat->id)}}">Generate PDF</a></td>
+                        <td><a class="btn btn-primary btn-sm" href="{{route('downloadPdf', $dat->id)}}">Print</a></td>
                     </tr>
                     @endforeach
                     </tbody>

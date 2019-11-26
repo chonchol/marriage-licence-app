@@ -4,13 +4,14 @@
     <list default="true" id="e0457b1f-ce4a-4af8-acbd-955754e424e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/pdf.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/religion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/religion.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/step1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/customjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/customjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/infoTable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/infoTable.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/print.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/print.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/step2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/step3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/step4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step4.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -176,7 +177,8 @@
       <workItem from="1574136680435" duration="19447000" />
       <workItem from="1574222530209" duration="12818000" />
       <workItem from="1574309323041" duration="7485000" />
-      <workItem from="1574567406487" duration="14179000" />
+      <workItem from="1574567406487" duration="16164000" />
+      <workItem from="1574654858126" duration="8051000" />
     </task>
     <servers />
   </component>

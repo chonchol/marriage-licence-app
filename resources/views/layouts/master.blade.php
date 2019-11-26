@@ -30,7 +30,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/') }}">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -112,8 +112,13 @@
                     </li>
 
                     <!-- Nav Item - User Information -->
+
+                    <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+
                     <li class="nav-item no-arrow">
-                            <a class="nav-link" href="{{ route('logout') }}">
+                            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Logout</span>
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             </a>

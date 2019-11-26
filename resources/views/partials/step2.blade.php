@@ -4,7 +4,7 @@
         <div class="col-md-12">
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="namelastfirst" value="1" name="nlastfirst">
-                <label class="form-check-label" for="intended">Please check this box if Last Name and First and Middle Name do not apply to the applicant because they have either a registered Birth Certificate or Change of Name Certificate bearing a Single Name
+                <label class="form-check-label" for="namelastfirst">Please check this box if Last Name and First and Middle Name do not apply to the applicant because they have either a registered Birth Certificate or Change of Name Certificate bearing a Single Name
                 </label>
             </div>
         </div>
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-
+{{--        @if(isset($_POST['app_birth_country']) == "Canada")--}}
         <div class="col-md-4">
             <div class="form-group">
                 <label for="placeof_province">Province</label>
@@ -116,25 +116,32 @@
                 </div>
             </div>
         </div>
+{{--        @endif--}}
         <div class="col-md-12">
             <hr>
             <h4>Parents 1</h4>
             <br>
         </div>
-
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="prnamelastfirst" value="1" name="prnlastfirst">
+                <label class="form-check-label" for="prnamelastfirst">Please check this box if Last Name and First and Middle Name do not apply to the applicant because they have either a registered Birth Certificate or Change of Name Certificate bearing a Single Name
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3 prapp-lm">
             <div class="form-group">
                 <label for="parents-lname">Parents Last Name <span class="asterisk">*</span></label>
                 <input type="text" class="form-control" id="parents-lname" name="parents1_lname">
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 prapp-lm">
             <div class="form-group">
                 <label for="parents-fname">Parents First Name <span class="asterisk">*</span></label>
                 <input type="text" class="form-control" id="parents-fname" name="parents1_fname">
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 prapp-sn">
             <div class="form-group">
                 <label for="parents-sname">Parents Single Name <span class="asterisk">*</span></label>
                 <input type="text" class="form-control" id="parents-sname" name="parents1_sname">
@@ -168,21 +175,27 @@
             <h4>Parents 2</h4>
             <br>
         </div>
-
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="pr2namelastfirst" value="1" name="pr2nlastfirst">
+                <label class="form-check-label" for="pr2namelastfirst">Please check this box if Last Name and First and Middle Name do not apply to the applicant because they have either a registered Birth Certificate or Change of Name Certificate bearing a Single Name
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3 pr2app-lm">
             <div class="form-group">
                 <label for="parents-lname">Parents Last Name <span class="asterisk">*</span></label>
                 <input type="text" class="form-control" id="parents-lname" name="parents2_lname">
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr2app-lm">
             <div class="form-group">
                 <label for="parents-fname">Parents First Name <span class="asterisk">*</span></label>
                 <input type="text" class="form-control" id="parents-fname" name="parents2_fname">
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 pr2app-sn">
             <div class="form-group">
                 <label for="parents-sname">Parents First Name <span class="asterisk">*</span></label>
                 <input type="text" class="form-control" id="parents-sname" name="parents2_sname">

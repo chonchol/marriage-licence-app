@@ -14,8 +14,16 @@
                     <a class="navbar-brand" href="#">
                         Marriage Licence Application
                     </a>
-                    <ul class="navbar-nav ml-auto">
 
+                    <ul class="navbar-nav ml-auto">
+                        @if (Auth::check())
+                        <li class="nav-item no-arrow">
+                            <a class="nav-link" href="{{ route('dashboard') }}">
+                                <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Dashboard</span>
+                            </a>
+                        </li>
+                        @else
                         <li class="nav-item no-arrow">
                             <a class="nav-link" href="{{ route('login') }}">
                                 <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -28,7 +36,10 @@
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Register</span>
                             </a>
                         </li>
+                        @endif
                     </ul>
+
+
                 </nav>
 
             </div>
@@ -71,108 +82,6 @@
 @push('scripts')
     <script src="{{ asset('assets/js/jquery.smartWizard.min.js') }}"></script>
     <script src="{{ asset('assets/js/validator.min.js') }}"></script>
-    <script>
-        $(document).ready(function(){
-            $('#smartwizard').smartWizard({
-                theme: 'arrows',
-                transitionEffect: 'fade',
-                transitionSpeed: '400',
-                toolbarSettings: {
-                    toolbarPosition: 'top'
-                }
-            });
+    <script src="{{ asset('assets/js/customjs.js') }}"></script>
 
-            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
-                var elmForm = $("#form-step-" + stepNumber);
-                if(stepDirection === 'forward' && elmForm){
-                    elmForm.validator('validate');
-                    var elmErr = elmForm.children('.has-error');
-                    if(elmErr && elmErr.length > 0){
-                        return false;
-                    }
-                }
-                return true;
-            });
-
-
-            $("#namelastfirst").click(function () {
-                if ($(this).is(":checked")) {
-                    $(".app-sn").show();
-                    $(".app-lm").hide();
-                } else {
-                    $(".app-sn").hide();
-                    $(".app-lm").show();
-                }
-            });
-            $(".court-file").hide();
-            $(".divorced-country").hide();
-            $("input[name=app_marital_stat]").change(function () {
-                if ($("#divorced_canada").is(":checked")) {
-                    $(".court-file").show();
-                } else {
-                    $(".court-file").hide();
-                }
-
-                if ($("#canada_outside").is(":checked")) {
-                    $(".divorced-country").show();
-                } else {
-                    $(".divorced-country").hide();
-                }
-            });
-
-            $(".permanent_val").hide();
-            $("#permanentcheck").click(function () {
-                if ($(this).is(":checked")) {
-                    $(".permanent_val").show();
-                } else {
-                    $(".permanent_val").hide();
-                }
-            });
-
-            // For joint applicant
-            $("#jnamelastfirst").click(function () {
-                if ($(this).is(":checked")) {
-                    $(".japp-sn").show();
-                    $(".japp-lm").hide();
-                } else {
-                    $(".japp-sn").hide();
-                    $(".japp-lm").show();
-                }
-            });
-            $(".jcourt-file").hide();
-            $(".jdivorced-country").hide();
-            $("input[name=japp_marital_stat]").change(function () {
-                if ($("#jdivorced_canada").is(":checked")) {
-                    $(".jcourt-file").show();
-                } else {
-                    $(".jcourt-file").hide();
-                }
-
-                if ($("#jcanada_outside").is(":checked")) {
-                    $(".jdivorced-country").show();
-                } else {
-                    $(".jdivorced-country").hide();
-                }
-            });
-
-            $(".jpermanent_val").hide();
-            $("#jpermanentcheck").click(function () {
-                if ($(this).is(":checked")) {
-                    $(".jpermanent_val").show();
-                } else {
-                    $(".jpermanent_val").hide();
-                }
-            });
-
-        });
-
-        function submitBday() {
-            var Q4A = "";
-            var Bdate = document.getElementById('app-dob').value;
-            var Bday = +new Date(Bdate);
-            Q4A += ~~ ((Date.now() - Bday) / (31557600000));
-            var theBday = document.getElementById('app-age');
-            theBday.value = Q4A;
-        }
-    </script>
 @endpush

@@ -120,21 +120,27 @@
             <h4>Parents 1</h4>
             <br>
         </div>
-
-        <div class="col-md-4">
+        <div class="col-md-12">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="prjnamelastfirst" value="1" name="jnlastfirst">
+                <label class="form-check-label" for="prjnamelastfirst">Please check this box if Last Name and First and Middle Name do not apply to the applicant because they have either a registered Birth Certificate or Change of Name Certificate bearing a Single Name
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 prjapp-lm">
             <div class="form-group">
                 <label for="jparents-lname">Parents Last Name</label>
                 <input type="text" class="form-control" id="jparents-lname" name="jparents1_lname">
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 prjapp-lm">
             <div class="form-group">
                 <label for="jparents-fname">Parents First Name</label>
                 <input type="text" class="form-control" id="jparents-fname" name="jparents1_fname">
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 prjapp-sn">
             <div class="form-group">
                 <label for="jparents-sname">Parents Single Name</label>
                 <input type="text" class="form-control" id="jparents-fname" name="jparents1_sname">
@@ -168,21 +174,27 @@
             <h4>Parents 2</h4>
             <br>
         </div>
-
-        <div class="col-md-4">
+        <div class="col-md-12">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="pr2jnamelastfirst" value="1" name="pr2jnlastfirst">
+                <label class="form-check-label" for="pr2jnamelastfirst">Please check this box if Last Name and First and Middle Name do not apply to the applicant because they have either a registered Birth Certificate or Change of Name Certificate bearing a Single Name
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4 pr2japp-lm">
             <div class="form-group">
                 <label for="jparents-lname">Parents Last Name</label>
                 <input type="text" class="form-control" id="jparents-lname" name="jparents2_lname">
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pr2japp-lm">
             <div class="form-group">
                 <label for="jparents-fname">Parents First Name</label>
                 <input type="text" class="form-control" id="jparents-fname" name="jparents2_fname">
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 pr2japp-sn">
             <div class="form-group">
                 <label for="jparents-sname">Parents Single Name</label>
                 <input type="text" class="form-control" id="jparents-sname" name="jparents2_sname">

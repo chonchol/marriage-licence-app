@@ -78,9 +78,9 @@
                     <td>
                         <label class="label-contain">Never married
                             @if($dat->app_marital_stat == 1)
-                            <span class="crossmark">&#10006;</span>
+                                <span class="crossmark">&#10006;</span>
                             @else
-                            <span class="crossmark"></span>
+                                <span class="crossmark"></span>
                             @endif
 
                         </label>

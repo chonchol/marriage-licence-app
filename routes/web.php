@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('save', 'ApplicantController@store')->name('saveApplicant');
-Route::get('/pdf/{id}', 'ApplicantController@pdf')->name('downloadPdf');
+
 
 Route::get('/print/{id}', 'ApplicantController@print')->name('printData');
 
@@ -29,4 +29,5 @@ Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
 Route::group(['prefix' => 'applicant'], function () {
     Route::get('all', 'HomeController@information')->name('infoAll');
+    Route::get('/pdf/{id}', 'HomeController@pdf')->name('downloadPdf');
 });
