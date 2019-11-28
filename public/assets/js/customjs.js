@@ -139,6 +139,102 @@ $(document).ready(function(){
         }
     });
 
+
+    // Country & Province Selected
+    $('#placeof_birth').change(function() {
+        if($(this).val() == "Canada"){
+            $('.control-prov').show();
+        }
+        else{
+            $('.control-prov').hide();
+        }
+    });
+
+    $('#parplaceof_birth').change(function() {
+        if($(this).val() == "Canada"){
+            $('.control-provpar1').show();
+        }
+        else{
+            $('.control-provpar1').hide();
+        }
+    });
+
+    $('#parplaceof_birth2').change(function() {
+        if($(this).val() == "Canada"){
+            $('.control-provpar2').show();
+        }
+        else{
+            $('.control-provpar2').hide();
+        }
+    });
+
+    $('#app_country').change(function() {
+        if($(this).val() == "Canada"){
+            $('.control-appprov').show();
+        }
+        else{
+            $('.control-appprov').hide();
+        }
+    });
+
+    $('#app_country-p').change(function() {
+        if($(this).val() == "Canada"){
+            $('.control-parper').show();
+        }
+        else{
+            $('.control-parper').hide();
+        }
+    });
+
+
+
+    // Country & Province Selected for Step 3
+    $('#jplaceof_birth').change(function() {
+        if($(this).val() == "Canada"){
+            $('.jcontrol-prov').show();
+        }
+        else{
+            $('.jcontrol-prov').hide();
+        }
+    });
+
+    $('#jparplaceof_birth').change(function() {
+        if($(this).val() == "Canada"){
+            $('.jcontrol-provpar1').show();
+        }
+        else{
+            $('.jcontrol-provpar1').hide();
+        }
+    });
+
+    $('#jparplaceof_birth').change(function() {
+        if($(this).val() == "Canada"){
+            $('.jcontrol-provpar2').show();
+        }
+        else{
+            $('.jcontrol-provpar2').hide();
+        }
+    });
+
+    $('#japp_country').change(function() {
+        if($(this).val() == "Canada"){
+            $('.jcontrol-appprov').show();
+        }
+        else{
+            $('.jcontrol-appprov').hide();
+        }
+    });
+
+    $('#japp_country-p').change(function() {
+        if($(this).val() == "Canada"){
+            $('.jcontrol-parper').show();
+        }
+        else{
+            $('.jcontrol-parper').hide();
+        }
+    });
+
+
 });
 
 function submitBday() {
@@ -147,5 +243,14 @@ function submitBday() {
     var Bday = +new Date(Bdate);
     Q4A += ~~ ((Date.now() - Bday) / (31557600000));
     var theBday = document.getElementById('app-age');
+    theBday.value = Q4A;
+}
+
+function submitBday3() {
+    var Q4A = "";
+    var Bdate = document.getElementById('japp-dob').value;
+    var Bday = +new Date(Bdate);
+    Q4A += ~~ ((Date.now() - Bday) / (31557600000));
+    var theBday = document.getElementById('japp-age');
     theBday.value = Q4A;
 }

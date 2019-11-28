@@ -43,3 +43,7 @@ h4{
 .asterisk{
     color: red;
 }
+
+.form-check{
+    padding-left: 25px!important;
+}

@@ -3,17 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e0457b1f-ce4a-4af8-acbd-955754e424e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/customjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/customjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/infoTable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/infoTable.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/print.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/print.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/step1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step1.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/step2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/step3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step3.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,6 +174,8 @@
       <workItem from="1574309323041" duration="7485000" />
       <workItem from="1574567406487" duration="16164000" />
       <workItem from="1574654858126" duration="8051000" />
+      <workItem from="1574742589870" duration="7570000" />
+      <workItem from="1574826989328" duration="2317000" />
     </task>
     <servers />
   </component>

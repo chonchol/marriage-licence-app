@@ -47,7 +47,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <form action="{{ route('saveApplicant') }}" role="form" data-toggle="validator" method="POST">
+                <form action="{{ route('saveApplicant') }}" role="form" data-toggle="validator" method="POST" accept-charset="utf-8">
                     @csrf
                      <div id="smartwizard">
                     <ul>
@@ -80,8 +80,8 @@
 
 @endsection
 @push('scripts')
-    <script src="{{ asset('assets/js/jquery.smartWizard.min.js') }}"></script>
     <script src="{{ asset('assets/js/validator.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.smartWizard.min.js') }}"></script>
     <script src="{{ asset('assets/js/customjs.js') }}"></script>
 
 @endpush
