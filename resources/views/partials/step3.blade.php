@@ -233,7 +233,7 @@
 
             <div class="form-group col-md-3">
                 <label for="japp-postal">Postal Code <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="japp-postal" name="japp_prsnt_pcode" required>
+                <input type="text" class="form-control p-code" id="japp-postal" name="japp_prsnt_pcode" maxlength="7" required>
                 <div class="help-block with-errors"></div>
             </div>
 
@@ -291,7 +291,7 @@
 
             <div class="form-group col-md-3 jpermanent_val">
                 <label for="japp-postal-p">Postal Code <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="japp-postal-p" name="japp_prmnt_pcode">
+                <input type="text" class="form-control p-code" id="japp-postal-p" name="japp_prmnt_pcode" maxlength="7">
             </div>
 
             <div class="form-group col-md-3 jpermanent_val">

@@ -25,6 +25,12 @@
                         </li>
                         @else
                         <li class="nav-item no-arrow">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user-tie fa-sm fa-fw mr-2 text-gray-400"></i>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Reserved for Administration</span>
+                            </a>
+                        </li>
+                            <li class="nav-item no-arrow">
                             <a class="nav-link" href="{{ route('login') }}">
                                 <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Login</span>

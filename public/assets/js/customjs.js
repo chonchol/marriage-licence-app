@@ -4,7 +4,13 @@ $(document).ready(function(){
         transitionEffect: 'fade',
         transitionSpeed: '400',
         toolbarSettings: {
-            toolbarPosition: 'top'
+            toolbarPosition: 'both'
+        }
+    });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+        if(stepNumber === 3){
+            $(".sw-btn-group").hide();
         }
     });
 
@@ -232,6 +238,14 @@ $(document).ready(function(){
         else{
             $('.jcontrol-parper').hide();
         }
+    });
+
+    $('.p-code').keyup(function() {
+        var foo = $(this).val().split(" ").join(""); // remove hyphens
+        if (foo.length > 0) {
+            foo = foo.match(new RegExp('.{1,3}', 'g')).join(" ");
+        }
+        $(this).val(foo);
     });
 
 

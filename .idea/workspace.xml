@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0457b1f-ce4a-4af8-acbd-955754e424e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/marriage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/marriage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/customjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/customjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/step1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step1.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/step2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/step3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/step3.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,30 +131,36 @@
   </component>
   <component name="ProjectId" id="1TjB2yk3D5Hjkvm2myOVg8MPg85" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -176,6 +181,11 @@
       <workItem from="1574654858126" duration="8051000" />
       <workItem from="1574742589870" duration="7570000" />
       <workItem from="1574826989328" duration="2317000" />
+      <workItem from="1574915949756" duration="1445000" />
+      <workItem from="1575261070460" duration="813000" />
+      <workItem from="1575263723603" duration="47000" />
+      <workItem from="1575263802597" duration="1323000" />
+      <workItem from="1575346328485" duration="2673000" />
     </task>
     <servers />
   </component>
@@ -194,5 +204,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="144" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575263752175">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="144" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1575263752175" />
+    <state x="277" y="59" key="SettingsEditor" timestamp="1575264008806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1575264008806" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1575349629703">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1575349629703" />
   </component>
 </project>

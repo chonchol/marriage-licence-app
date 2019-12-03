@@ -229,7 +229,7 @@
 
             <div class="form-group col-md-3">
                 <label for="app-postal">Postal Code <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="app-postal" name="app_prsnt_pcode" required>
+                <input type="text" class="form-control p-code" id="app-postal" name="app_prsnt_pcode" maxlength="7" required>
                 <div class="help-block with-errors"></div>
             </div>
 
@@ -286,7 +286,7 @@
 
             <div class="form-group col-md-3 permanent_val">
                 <label for="app-postal-p">Postal Code <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="app-postal-p" name="app_prmnt_pcode">
+                <input type="text" class="form-control p-code" id="app-postal-p" name="app_prmnt_pcode" maxlength="7">
             </div>
 
             <div class="form-group col-md-3 permanent_val">
