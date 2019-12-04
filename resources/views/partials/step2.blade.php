@@ -235,7 +235,7 @@
 
             <div class="form-group col-md-3">
                 <label for="app-phone">Phone <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="app-phone" name="app_prsnt_phone" required>
+                <input type="text" class="form-control" id="app-phone" name="app_prsnt_phone" pattern="^[2-9]{1}[0-9]{2}-[2-9]{1}[0-9]{2}-[0-9]{4}$" placeholder="XXX-XXX-XXXX" required>
                 <div class="help-block with-errors"></div>
             </div>
 
@@ -291,7 +291,7 @@
 
             <div class="form-group col-md-3 permanent_val">
                 <label for="app-phone-p">Phone <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="app-phone-p" name="app_prmnt_phone">
+                <input type="text" class="form-control" id="app-phone-p" name="app_prmnt_phone" pattern="^[2-9]{1}[0-9]{2}-[2-9]{1}[0-9]{2}-[0-9]{4}$" placeholder="XXX-XXX-XXXX">
             </div>
         </div>
     </div>

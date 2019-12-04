@@ -10,7 +10,7 @@ h4{
     color: black;
 }
 .custom-padding{
-    padding: 25px 20px;
+    padding: 45px 20px 0px 20px;
 }
 .for-welcome{
     background: white;
@@ -50,4 +50,8 @@ h4{
 
 .p-code{
     text-transform: uppercase;
+}
+
+#smartwizard .justify-content-end {
+    justify-content: center!important;
 }

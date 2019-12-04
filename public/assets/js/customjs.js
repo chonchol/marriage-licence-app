@@ -4,7 +4,7 @@ $(document).ready(function(){
         transitionEffect: 'fade',
         transitionSpeed: '400',
         toolbarSettings: {
-            toolbarPosition: 'both'
+            toolbarPosition: 'bottom'
         }
     });
 
